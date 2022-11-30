@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,6 +8,54 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New',
     monospace;
+}
+.react-flow .react-flow__handle {
+  width: 25px;
+  height: 25px;
+  background-color: #784be8;
+  position: relative;
+
+}
+
+.react-flow .react-flow__handle-top {
+ float: right;
+}
+
+.react-flow .react-flow__handle-bottom {
+ float: right;
+}
+
+.react-flow .react-flow__nodes {
+  height: 40px;
+  width: 150px;
+  display: flex;
+  border-width: 2px;
+  font-weight: 700;
+}
+
+.react-flow__node.react-flow__node-textUpdater.nopan.selectable{
+  height: 86px;
+}
+.react-flow .react-flow__edge path,
+.react-flow__connectionline path {
+  stroke-width: 3;
+}
+
+.wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.save__controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 4;
+  font-size: 12px;
+}
+
+.save__controls button {
+  margin-left: 5px;
 }
